@@ -1,0 +1,14 @@
+h1 Contacts
+
+table#contacts
+  tr
+    td Name
+    td Date
+    td Number
+    td Description
+  - for contact in @contacts
+    tr
+      td.name =  contact.name
+      td.date = contact.date
+      td.number = contact.number
+      td.desctiption = contact.description

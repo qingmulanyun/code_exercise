@@ -1,0 +1,10 @@
+<%= form_for :contact, url: contacts_do_upload_path, :remote=>true do |f| %>
+    <%= f.label :contact, 'Upload your file.' %><br />
+    <%= f.file_field :contact %>
+
+    <p>
+      <%= f.submit :class => 'default-btn'  %>
+    </p>
+    <br />
+
+<% end %>
